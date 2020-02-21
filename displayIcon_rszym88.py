@@ -15,6 +15,8 @@ This is a temporary script file.
 """
 
 
+
+
 #Create Your Lists (Globas)
 iconLst = ['0000000000','0000000000','0000011110','0011110010','1110010010','0110011110',
            '1111110010','0110010010','1110011110','0111100000']
@@ -41,6 +43,7 @@ def lstScaling():
     
 def lstDislay():
     #Loop through each item/row/ to print out
+    
     for i in range(0,len(scaleLst[i])):
         #Create a master variable to reference
         rowMaster = scaleLst[i]
@@ -50,6 +53,7 @@ def lstDislay():
                 print(rowMaster[x] + "#",end=" ")
             else:
                 print(rowMaster[x] + " ", end=" ")
+
              #Prints characters for display
         #print a line return at the end of each cycle in the outter loop
         print("\r")
@@ -62,6 +66,7 @@ def codeMain():
     print("\r")
     print("\r")
     lstDisplay()
+
     print("\r")
     print("\r")
     #inline author badging or watermark
