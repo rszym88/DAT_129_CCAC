@@ -13,7 +13,9 @@ Process::
     -first variable in each list will correspond to a row6
 This is a temporary script file.
 """
-"Thid is a new comment"
+
+
+
 
 #Create Your Lists (Globas)
 iconLst = ['0000000000','0000000000','0000011110','0011110010','1110010010','0110011110',
@@ -41,15 +43,17 @@ def lstScaling():
     
 def lstDislay():
     #Loop through each item/row/ to print out
-    for i in range(0,len(iconLst)):
+    
+    for i in range(0,len(scaleLst[i])):
         #Create a master variable to reference
-        rowMaster = iconLst[i]
+        rowMaster = scaleLst[i]
         #loop through the master and add visual elements for better display
-        for x in range(0,len(rowMaster)):
-            if rowMaster[x] == '1':
-                print("#",end=" ")
+        for x in range(0,len(int(rowMaster)):
+            if rowMaster[x] == 1:
+                print(rowMaster[x] + "#",end=" ")
             else:
-                print(" ", end=" ")
+                print(rowMaster[x] + " ", end=" ")
+
              #Prints characters for display
         #print a line return at the end of each cycle in the outter loop
         print("\r")
@@ -57,16 +61,15 @@ def lstDislay():
 def codeMain():
     #Begin by calling the scaling function to get the inoput from the user/generate the scaled list
     lstScaling()
-    print(scaleLst)
+    
     #Once you've received the scale confirmation you may the run the second function to print the icon
     print("\r")
     print("\r")
-    lstDislay()
+    lstDisplay()
+
     print("\r")
     print("\r")
     #inline author badging or watermark
     print("...*** :: Icon Display by @rszym88 :: ***...")
     
 #Program Version v1.0
-    
-codeMain()
